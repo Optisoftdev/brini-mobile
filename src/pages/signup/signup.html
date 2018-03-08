@@ -1,0 +1,45 @@
+<!-- Themes Register + logo -->
+
+<!--Content -->
+<ion-content >
+  <ion-grid >
+      <ion-row padding-horizontal align-items-start>
+
+          <ion-col   no-padding col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+              <!---Logo-->
+              <ion-thumbnail >
+                  <img src='assets/img/appicon.png' >
+              </ion-thumbnail>
+              <!--Form Title-->
+              <h1 ion-text color="accent" title>Join BRINWMS</h1>
+              <!---Input field username-->
+              <ion-item no-padding>
+                  <ion-label color="dark" stacked>Username</ion-label>
+                  <ion-input required placeholder="Enter Username" type="text" [(ngModel)]="username"></ion-input>
+              </ion-item>
+              <!---Input field password-->
+              <ion-item no-padding>
+                  <ion-label color="dark" stacked>Password</ion-label>
+                  <ion-input required placeholder="Enter Password" type="password" [(ngModel)]="password"></ion-input>
+              </ion-item>
+              <!---Input field email-->
+              <ion-item no-padding>
+                  <ion-label color="dark" stacked>Email</ion-label>
+                  <ion-input required placeholder="Enter Email" type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required [(ngModel)]="email"></ion-input>
+              </ion-item>
+              <!---Input field country-->
+              <ion-item no-padding>
+                  <ion-label color="dark" stacked>Country</ion-label>
+                  <ion-input required placeholder="Enter Country" type="text" pattern="[a-zA-Z ]*" required [(ngModel)]="country"></ion-input>
+              </ion-item>
+              <!---Input field city-->
+              <ion-item no-padding>
+                  <ion-label stacked>City</ion-label>
+                  <ion-input required placeholder="Enter City" type="text" pattern="[a-zA-Z ]*" required [(ngModel)]="city"></ion-input>
+              </ion-item>
+              <!---Register button-->
+              <button ion-button margin-top float-right clear button-clear text-capitalize (click)="register()">Register</button>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

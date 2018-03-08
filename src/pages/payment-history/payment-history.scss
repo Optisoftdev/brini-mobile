@@ -1,0 +1,105 @@
+page-payment-history {
+  .bal_container{
+    padding: 30px 0;
+    .item-inner{
+      border: none !important;
+    }
+  }
+  .balance{
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    margin: 0px;
+    color: #fff;
+
+  }
+
+  ion-label{
+    padding: 0px;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .input{
+    border: #ccc 1px solid;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    color: rgb(24, 24, 24);
+  }
+  .text-input-md, .text-input-wp, .text-input-ios {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    line-height: 1rem;
+  }
+  .label-md, .label-wp, .label-ios{
+    margin: 8px 8px 8px 0px !important;
+  }
+
+  .bank-button{
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #29B6F6;
+  }
+  .bank-button:active{
+    background-color: #0288D1;
+  }
+
+  .history-type{
+    color: #666;
+    font-size: 13px;
+    max-height: 80%;
+  }
+  .history-amount{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .history-date{
+    float: right;
+    font-size: 11px;
+    color: #666;
+  }
+  .history-status{
+    float: right;
+    padding: 1px 3px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 10px;
+  }
+  .pending{
+    background-color: #F57C00;
+  }
+  .approved{
+    background-color: #43A047;
+  }
+  .bank-name{
+    color: rgb(20, 20, 20);
+    font-weight: 500;
+  }
+  .bank-number{
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+  }
+  .bank-type{
+    color: rgb(46, 46, 46);
+  }
+  .bank-edit{
+    float: right;
+    background-color: #ccc;
+    border-radius: 8px;
+    padding: 4px;
+  }
+  .add-button{
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #488aff;
+  }
+
+
+
+}

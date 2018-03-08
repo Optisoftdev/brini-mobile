@@ -1,0 +1,131 @@
+<!--
+  Generated template for the DonatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header header-ios>
+  <ion-navbar transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title  text-left>Subscribe</ion-title>
+  </ion-navbar>
+
+
+
+
+
+
+    <ion-toolbar no-border-top>
+      <ion-segment [(ngModel)]="pet">
+        <ion-segment-button value="free">
+        Free
+        </ion-segment-button>
+        <ion-segment-button value="Group 1">
+          Group 1
+        </ion-segment-button>
+        <ion-segment-button value="Group 2">
+          Group 2
+        </ion-segment-button>
+        <ion-segment-button value="Group 3">
+          Group 3
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'free'">
+       <div align="center" padding>
+        <h6>Free Package</h6>
+         <h1>₦00.00</h1>
+         <p>Each Month</p>
+         <button ion-button color="danger" full="" (click)="logout()">
+           Downgrade
+         </button>
+       </div>
+        <div padding>
+          <ul padding>
+            <li><h5>Good Jobs</h5></li>
+            <li><h5>Free Books</h5></li>
+            <li><h5>Daily Radio Free</h5></li>
+            <li><h5>Daily Quotes and Gospels</h5></li>
+            <li><h5>24 hours Preachings</h5></li>
+          </ul>
+
+        </div>
+
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'Group 1'">
+        <div align="center" padding>
+          <h6>Group 1 Package</h6>
+          <h1>₦5000.00</h1>
+          <p>Each Month</p>
+          <button ion-button clear full="" (click)="logout()">
+            Current Plan
+          </button>
+        </div>
+        <div padding>
+          <ul padding>
+            <li><h5>Good Jobs</h5></li>
+            <li><h5>Free Books</h5></li>
+            <li><h5>Daily Radio Free</h5></li>
+            <li><h5>Daily Quotes and Gospels</h5></li>
+            <li><h5>24 hours Preachings</h5></li>
+          </ul>
+        </div>
+
+
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'Group 2'">
+        <div align="center" padding>
+          <h6>Free Package</h6>
+          <h1>₦10000.00</h1>
+          <p>Each Month</p>
+          <button ion-button color="primary" full="" (click)="logout()">
+            Upgrade
+          </button>
+        </div>
+        <div padding>
+          <ul padding>
+            <li><h5>Good Jobs</h5></li>
+            <li><h5>Free Books</h5></li>
+            <li><h5>Daily Radio Free</h5></li>
+            <li><h5>Daily Quotes and Gospels</h5></li>
+            <li><h5>24 hours Preachings</h5></li>
+          </ul>
+        </div>
+
+
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'Group 3'">
+        <div align="center" padding>
+          <h6>Free Package</h6>
+          <h1>₦20000.00</h1>
+          <p>Each Month</p>
+          <button ion-button color="primary" full="" (click)="logout()">
+            Upgrade
+          </button>
+        </div>
+        <div padding>
+          <ul padding>
+            <li><h5>Good Jobs</h5></li>
+            <li><h5>Free Books</h5></li>
+            <li><h5>Daily Radio Free</h5></li>
+            <li><h5>Daily Quotes and Gospels</h5></li>
+            <li><h5>24 hours Preachings</h5></li>
+          </ul>
+        </div>
+
+
+
+
+      </ion-list>
+    </div>
+  </ion-content>
+

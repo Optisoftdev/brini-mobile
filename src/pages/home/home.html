@@ -1,0 +1,144 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header header-ios>
+  <ion-navbar transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title  text-left>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<div >
+
+
+  <ion-grid class="ion-grid">
+    <ion-row>
+
+
+      <ion-col col-4 (click)="stream()">
+
+          <div align="center">
+            <ion-icon name="videocam" color="primary"></ion-icon>
+            <h6>Streaming</h6>
+          </div>
+
+      </ion-col>
+
+      <ion-col col-4 (click)="news()">
+
+          <div align="center">
+            <ion-icon name="information-circle"  color="secondary"></ion-icon>
+            <h6>News</h6>
+          </div>
+
+      </ion-col>
+
+      <ion-col col-4 (click)="video()">
+
+          <div align="center">
+            <ion-icon name="ios-film" color="danger"></ion-icon>
+            <h6>Videos</h6>
+          </div>
+
+      </ion-col>
+
+
+      <ion-col col-4 (click)="audio()">
+
+          <div align="center">
+            <ion-icon name="musical-note" color="vibrant"></ion-icon>
+            <h6>Audios</h6>
+          </div>
+
+      </ion-col>
+
+      <ion-col col-4 >
+
+          <div align="center">
+            <ion-icon name="contact" color="danger"></ion-icon>
+            <h6>Profile</h6>
+          </div>
+
+      </ion-col>
+
+      <ion-col col-4 (click)="settings()">
+
+          <div align="center">
+            <ion-icon name="construct" color="primary"></ion-icon>
+            <h6>Settings</h6>
+          </div>
+
+      </ion-col>
+
+
+
+      <ion-col col-4 (click)="donate()">
+
+          <div align="center" >
+            <ion-icon name="cash" color="vibrant"></ion-icon>
+            <h6>Subscribe </h6>
+          </div>
+
+      </ion-col>
+
+      <ion-col col-4 (click)="contact()">
+
+          <div align="center">
+            <ion-icon name="map"  color="secondary"></ion-icon>
+            <h6>Contact Us</h6>
+          </div>
+
+      </ion-col>
+
+
+      <ion-col col-4 (click)="devotion()">
+
+        <div align="center">
+          <ion-icon name="ios-book" color="danger" ></ion-icon>
+          <h6>Devotions</h6>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+  <div>
+  <ion-grid>
+    <ion-row align-items-end>
+      <ion-col col-3 (click)="about()">
+        <ion-icon name="ios-information" ></ion-icon>
+        <p>About Us</p>
+      </ion-col>
+      <ion-col col-3>
+        <a href="https://www.facebook.com/">
+        <ion-icon name="logo-facebook" color="primary"></ion-icon>
+        <p>Facebook</p>
+        </a>
+      </ion-col>
+
+      <ion-col col-3  (click)="chat()">
+        <ion-icon name="chatboxes" color="vibrant"></ion-icon>
+        <p>Chat</p>
+      </ion-col>
+
+      <ion-col col-3>
+        <a href="tel:08038385263">
+        <ion-icon name="call" color="secondary"></ion-icon>
+        <p>Call Us</p>
+        </a>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</div>
+</ion-content>

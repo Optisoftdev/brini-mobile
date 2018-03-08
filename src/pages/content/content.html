@@ -1,0 +1,32 @@
+<!--- Theme Parallax - Profile -->
+<ion-header header-ios>
+  <ion-navbar transparent>
+    <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title  text-left>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- Content -->
+<ion-content elastic-header>
+  <div padding background-size id="elastic-header" [ngStyle]="{'background-image': 'url(' + headerImage + ')'}">
+    <ion-thumbnail>
+      <img src="assets/img/speakers/bear.jpg"/>
+    </ion-thumbnail>
+    <!-- Parallx Title -->
+    <h2 text-center parallax-title >Sato Series</h2>
+    <!-- Parallx Subtitle -->
+    <h3 text-center parallax-subtitle >Full Member Subscription</h3>
+  </div>
+  <ion-list >
+    <ion-item border no-lines  (click)="onEvent('onItemClick', item)">
+      <ion-avatar item-start>
+        <img src="assets/img/speakers/bear.jpg" />
+      </ion-avatar>
+      <h2 item-title>Instagram</h2>
+      <h3 item-subtitle text-wrap>Www.instagram.com/sato</h3>
+      <button text-capitalize button-clear ion-button item-end clear>Visit</button>
+
+    </ion-item>
+  </ion-list>
+</ion-content>

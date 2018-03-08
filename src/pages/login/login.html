@@ -1,0 +1,52 @@
+<ion-content has-header>
+  <ion-grid >
+      <ion-row padding-horizontal align-self-center>
+
+          <ion-col align-self-end col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+              <!--DESCRIPTION-->
+              <ion-item no-lines no-padding>
+                  <h2 ion-text color="dark" login-subtitle text-wrap>Welcome to BRINWMS</h2>
+                  <h1 no-margin login-title text-wrap>Church Without Walls</h1>
+                  <!--LOGO-->
+
+                  <img src="assets/img/appicon.png" >
+
+              </ion-item>
+
+          </ion-col>
+          <ion-col align-self-center col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+              <!---Input field username-->
+              <ion-item no-padding transparent>
+                  <ion-label color="dark" stacked>USERNAME</ion-label>
+                  <ion-input required [(ngModel)]="account.email" placeholder="Enter Username" type="text"></ion-input>
+              </ion-item>
+              <!---Input field password-->
+              <ion-item no-padding transparent>
+                  <ion-label color="dark" stacked>PASSWORD</ion-label>
+                  <ion-input required [(ngModel)]="account.password" placeholder="Enter Password" type="password" ></ion-input>
+              </ion-item>
+
+              <!---Login button-->
+
+              <button ion-button button-clear float-right clear text-capitalize (click)="Signup()">Register</button>
+
+              <!---Register button-->
+
+              <button ion-button button-clear clear float-right text-capitalize (click)="login()">Login</button>
+
+          </ion-col>
+          <!---Share Section-->
+          <ion-col align-self-end col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 social>
+              <!---Facebook button-->
+              <button ion-button text-capitalize default-button color="facebook" (click)="onEvent('onFacebook')">Facebook</button>
+              <!---Twitter button-->
+              <button ion-button text-capitalize default-button color="twitter" (click)="onEvent('onTwitter')">Twitter</button>
+              <!---Google button-->
+              <button ion-button text-capitalize default-button color="google" (click)="onEvent('onGoogle')">Google</button>
+              <!---Pinterest button-->
+              <button ion-button text-capitalize default-button color="pinterest" (click)="onEvent('onPinterest')">Pinterest</button>
+          </ion-col>
+          <!---End Share Section-->
+      </ion-row>
+  </ion-grid>
+</ion-content>
